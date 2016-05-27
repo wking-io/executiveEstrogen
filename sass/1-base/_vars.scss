@@ -1,22 +1,19 @@
 // fonts
 
-$sans: 'Raleway', sans-serif;
-$serif: 'Roboto Slab', serif;
-$display: 'still-shine', sans-serif;
+$sans: 'Montserrat', sans-serif;
+$serif: 'Droid Serif', serif;
+$body: 'Roboto', sans-serif;
 
 // colors
 
-$primary-color: #032B35;
-$primary-dark: shade($primary-color, 50%);
-$accent-color: #933B37;
-$accent-dark: shade($accent-color, 25%);
+$primary-color: #19132B;
+$primary-hover: #2E244B;
+$accent-color: #5BCEBB;
+$accent-dark: #31BEA7;
 $text-color-dark: $primary-color;
-$text-color-light: rgba(#fff, 0.87);
-$bg-color: #fff;
-$bg-color-dark: $primary-color;
-$link-color: $accent-color;
-$btn-color: $accent-color;
-$btn-hover: $accent-dark;
+$text-color-light: rgba(#fff, 0.95);
+$bg-light: #F4F3F5;
+$bg-dark: $primary-color;
 $error-color: #EF233C;
 $success-color: #06D6A0;
 
