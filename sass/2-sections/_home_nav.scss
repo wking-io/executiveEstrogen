@@ -1,0 +1,19 @@
+.nav {
+  &__links {
+    list-style-type: none;
+    & li {
+      display: inline;
+      padding: 0 1.25em;
+    }
+    & li a {
+      text-decoration: none;
+      font-family: $serif;
+      font-size: ms(0);
+      color: $text-color-dark;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+}
