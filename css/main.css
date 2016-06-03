@@ -446,7 +446,7 @@ a {
 .divider__vertical {
   position: absolute;
   left: 50%;
-  bottom: 8em;
+  bottom: 5em;
   transform: translateX(-50%) rotate(90deg); }
   .divider__vertical .long {
     width: 4.5rem;
@@ -599,7 +599,7 @@ a {
 .diff {
   background: #F4F3F5;
   width: 100vw;
-  padding: 5em 0 16em 0;
+  padding: 5em 0 10em 0;
   position: relative; }
   .diff h2 {
     padding-bottom: 40px; }
@@ -626,7 +626,7 @@ a {
   .discover h2 {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    margin-top: -1.25em; }
+    margin-top: 1em; }
   .discover h3 {
     color: #5BCEBB;
     margin: 32px 0 64px 0; }
