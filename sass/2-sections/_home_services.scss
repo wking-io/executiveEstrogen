@@ -1,0 +1,30 @@
+.services {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background: linear-gradient(rgba($primary-color, 0.6), rgba($primary-color, 0.6)), url(/img/services-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  & h2 {
+    color: white;
+  }
+
+  & .divider {
+    margin: 0.75em 0 1.5em 0;
+    opacity: 1;
+
+    & hr {
+      background: white;
+    }
+  }
+
+  & h3 {
+    color: $accent-color;
+  }
+
+  & p {
+    color: white;
+  }
+}

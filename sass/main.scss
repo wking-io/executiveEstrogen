@@ -1,7 +1,8 @@
 //@import "bourbon";
 //@import "bourbon", "neat";
-@import "0-tools/bourbon/bourbon";
-@import "0-tools/neat/neat";
+@import "0-tools/bourbon/bourbon"; // or "bourbon" when in Rails
+@import "0-tools/grid-settings";
+@import "0-tools/neat/neat"; // or "neat" when in Rails
 @import "0-tools/mixins";
 @import "0-tools/fonts";
 @import "0-tools/normalize";

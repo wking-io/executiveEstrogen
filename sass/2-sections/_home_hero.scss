@@ -1,1 +1,68 @@
-
+.hero {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background: linear-gradient(rgba($primary-color, 0), rgba($primary-color, 0.6)), url(/img/bg-two.jpeg);
+  background-size: cover;
+  background-position: center;
+  & h2 {
+    color: white;
+  }
+  &__highlight {
+    color: $primary-color;
+  }
+  & p {
+    color: white;
+    font-weight: 300;
+  }
+  & .divider {
+    margin: 0.75em 0 1.5em 0;
+    opacity: 0.75;
+    & .long {
+      background: white;
+    }
+    & .short {
+      background: white;
+    }
+  }
+  &__cta {
+    margin: 2em 0 0 0;
+    &--primary {
+      display: inline-block;
+      height: 4em;
+      background: $accent-color;
+      color: white;
+      margin: 0 1.4em 0 0;
+      padding: 1.3em 3em;
+      border: 2px solid $accent-color;
+      border-radius: 2em;
+      text-decoration: none;
+      transition: all 0.25s ease-in-out;
+    }
+    &--primary:hover {
+      background: $accent-hover;
+      border: 2px solid $accent-hover;
+    }
+    &--ghost {
+      display: inline-block;
+      height: 4em;
+      background: transparent;
+      color: white;
+      padding: 1.3em 3em;
+      border: 2px solid white;
+      border-radius: 2em;
+      text-decoration: none;
+      transition: all 0.25s ease-in-out;
+    }
+    &--ghost:hover {
+      background: white;
+      border: 2px solid white;
+      color: $primary-color;
+    }
+  }
+}
+@media (max-width: $S) {
+  .hero p {
+    letter-spacing: 0;
+  }
+}

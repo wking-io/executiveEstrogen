@@ -14,6 +14,8 @@ config.codekit
 ### Git ###
 *.orig
 
+### PSD ###
+*.psd
 
 ### OSX ###
 *.DS_Store

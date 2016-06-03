@@ -1,0 +1,266 @@
+.nav {
+  &__logo {
+    @include span-columns(3);
+  }
+  &__links {
+    text-align: right;
+  }
+}
+@media (max-width: $M) {
+  .nav {
+    &__logo {
+      @include span-columns(5);
+    }
+    &__links--text {
+      display: none;
+    }
+  }
+}
+@media (max-width: $S) {
+  .nav {
+    &__logo {
+      @include span-columns(8);
+      @include shift(2);
+    }
+    &__links {
+      display: none;
+    }
+  }
+}
+.hero {
+  min-height: 100vh;
+  &__content {
+    @include span-columns(10);
+    margin: 35vh 0 0 0;
+  }
+}
+@media (max-width: $M) {
+  .hero {
+    &__content {
+      @include span-columns(10);
+      margin: 35vh 0 0 0;
+      @include shift(1);
+    }
+  }
+}
+@media (max-width: $S) {
+  .hero {
+    &__content {
+      @include span-columns(12);
+      margin: 25vh 0 5em 0;
+    }
+  }
+}
+.services {
+  &__content {
+    @include span-columns(6);
+    margin: 5em 0;
+    @include shift(6);
+  }
+}
+@media (max-width: $M) {
+  .services {
+    &__content {
+      @include span-columns(10);
+      margin: 8em 0;
+      @include shift(1);
+    }
+  }
+}
+@media (max-width: $S) {
+  .services {
+    &__content {
+      @include span-columns(12);
+      margin: 8em 0;
+    }
+  }
+}
+.diff {
+  z-index: 1;
+  &__content {
+    @include row;
+
+    & p {
+    @include span-columns(8);
+    }
+  }
+
+  &__third {
+    @include span-columns(4);
+    margin-right: 1%;
+    margin-top: 40px;
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: $M) {
+  .diff {
+    z-index: 1;
+    & h2 {
+      @include shift(1);
+    }
+    &__content {
+      @include row;
+
+      & p {
+      @include span-columns(10);
+      @include shift(1);
+      }
+    }
+
+    &__third {
+      @include span-columns(10);
+      margin-right: 0;
+      margin-top: 24px;
+      margin-bottom: 0px;
+      @include shift(1);
+    }
+  }
+}
+@media (max-width: $S) {
+  .diff {
+    z-index: 1;
+    & h2 {
+      @include shift(0);
+    }
+    &__content {
+      @include row;
+
+      & p {
+      @include span-columns(12);
+      @include shift(0);
+      }
+    }
+
+    &__third {
+      @include span-columns(12);
+      margin-right: 0;
+      margin-top: 16px;
+      margin-bottom: 0px;
+      @include shift(0);
+    }
+  }
+}
+.discover {
+  z-index: 2;
+  position: relative;
+
+  & ul {
+    @include span-columns(8);
+    @include shift(2);
+    padding: 0 20px;
+  }
+}
+@media (max-width: $M) {
+  .discover {
+    z-index: 2;
+    position: relative;
+
+    & ul {
+      @include span-columns(10);
+      @include shift(1);
+      padding: 0 20px;
+    }
+  }
+}
+@media (max-width: $S) {
+  .discover {
+    z-index: 2;
+    position: relative;
+
+    & ul {
+      @include span-columns(12);
+      @include shift(0);
+      padding: 0 20px;
+    }
+  }
+}
+.footer {
+  position: relative;
+
+  & h2 {
+    @include span-columns(8);
+    text-indent: -14px;
+  }
+
+  & p {
+    @include span-columns(8);
+    margin: 32px 0 40px 0;
+    @include shift(2);
+  }
+  & form {
+    @include span-columns(7);
+    margin: 0 0 96px 0;
+    @include shift(2);
+  }
+  & hr {
+    @include fill-parent();
+  }
+  & &__info {
+    @include fill-parent();
+    margin: 32px 0;
+    padding: 0;
+    text-align: center;
+  }
+}
+@media (max-width: $M) {
+  .footer {
+    position: relative;
+
+    & h2 {
+      @include span-columns(10);
+      text-indent: -14px;
+      @include shift(1);
+    }
+
+    & p {
+      @include span-columns(10);
+      margin: 32px 0 40px 0;
+      @include shift(1);
+    }
+    & form {
+      @include span-columns(10);
+      margin: 0 0 96px 0;
+      @include shift(1);
+    }
+    & hr {
+      @include fill-parent();
+    }
+    & &__info {
+      @include fill-parent();
+      margin: 32px 0;
+      padding: 0;
+      text-align: center;
+    }
+  }
+}
+@media (max-width: $S) {
+  .footer {
+    position: relative;
+
+    & h2 {
+      @include span-columns(12);
+      text-indent: -14px;
+      @include shift(0);
+    }
+
+    & p {
+      @include span-columns(12);
+      margin: 32px 0 40px 0;
+      @include shift(0);
+    }
+    & form {
+      @include span-columns(12);
+      margin: 0 0 96px 0;
+      @include shift(0);
+    }
+    & hr {
+      @include fill-parent();
+    }
+    & &__info {
+      @include fill-parent();
+      margin: 32px 0;
+      padding: 0;
+      text-align: center;
+    }
+  }
+}

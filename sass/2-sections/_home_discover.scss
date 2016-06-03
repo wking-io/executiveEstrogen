@@ -1,0 +1,42 @@
+.discover {
+  text-align: center;
+  width: 100vw;
+  padding-bottom: 7em;
+  & h2 {
+    font-family: $sans;
+    font-weight: 400;
+    margin-top: -1.25em;
+  }
+  & h3 {
+    color: $accent-color;
+    margin: 32px 0 64px 0;
+  }
+
+  & ul {
+
+    & li {
+      line-height: 1.4;
+    }
+  }
+
+  & .divider {
+    opacity: 0.2;
+    margin: 24px 0;
+  }
+}
+@media (max-width: $M) {
+  .discover {
+    z-index: 2;
+    position: relative;
+    & ul li {
+      font-size: 28px;
+    }
+  }
+}
+@media (max-width: $M) {
+  .discover {
+    & ul li {
+      font-size: 22px;
+    }
+  }
+}

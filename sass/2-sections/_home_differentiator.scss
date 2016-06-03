@@ -1,0 +1,30 @@
+.diff {
+  background: #F4F3F5;
+  width: 100vw;
+  padding: 5em 0 16em 0;
+  position: relative;
+  & h2 {
+    padding-bottom: 40px;
+  }
+
+  &__number {
+    font-family: $sans;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: $accent-color;
+  }
+
+  & h3 {
+    margin-top: 0;
+  }
+}
+@media (max-width: $M) {
+  .diff h3 {
+    margin-bottom: 0;
+  }
+  .diff .margin-bottom {
+    margin-bottom: 24px;
+  }
+}

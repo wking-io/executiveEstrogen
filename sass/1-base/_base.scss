@@ -13,16 +13,18 @@ h1 {
   font-size: modular-scale(6);
   font-family: $sans;
   font-weight: normal;
+  margin: 0;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 3rem;
   font-family: $serif;
   font-weight: normal;
+  margin: 0;
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 2rem;
   font-family: $sans;
   font-weight: bold;
 }
@@ -33,25 +35,84 @@ h4 {
 }
 
 p {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: $body;
   font-weight: 300;
   line-height: 1.3;
+  letter-spacing: .2px;
+  margin: 0;
+  padding: 0 1em 0 0;
+
 }
 
 ul {
   list-style-type: none;
 
   & li {
-    font-size: 32px;
+    font-size: 2rem;
     font-family: $serif;
     line-height: 1.3;
   }
 }
 
 a {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: $sans;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.parent {
+  @include outer-container(85vw);
+}
+
+.divider {
+  .long {
+    width: 4.5rem;
+    height: 4px;
+    display: inline-block;
+    margin-right: .5rem;
+    background: $primary-color;
+    border: none;
+  }
+  .short {
+    width: .75rem;
+    height: 4px;
+    display: inline-block;
+    background: $primary-color;
+    border: none;
+  }
+}
+
+.divider__vertical {
+  position: absolute;
+  left: 50%;
+  bottom: 8em;
+  transform: translateX(-50%) rotate(90deg);
+  & .long {
+    width: 4.5rem;
+    height: 4px;
+    display: inline-block;
+    margin-right: .5rem;
+    background: $accent-color;
+    border: none;
+  }
+  & .short {
+    width: .75rem;
+    height: 4px;
+    display: inline-block;
+    background: $accent-color;
+    border: none;
+  }
+}
+
+@media (max-width: $M) {
+  .parent {
+    @include outer-container(90vw);
+  }
+}
+@media (max-width: $S) {
+  html {
+    font-size: 12px;
+  }
 }
