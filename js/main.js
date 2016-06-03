@@ -34,11 +34,9 @@ $(document).ready(function(){
   $(window).scroll(function() {
     if ($(document).scrollTop() >= 70 ) {
       $(".nav").css('background', 'rgba(255, 255, 255, 0.90)');
-      $(".nav__links--text").css('color', '#19132B');
       $(".nav__logo--second").css('fill', '#5BCEBB');
     } else {
       $(".nav").css('background', 'transparent');
-      $(".nav__links--text").css('color', 'white');
       $(".nav__logo--second").css('fill', 'white');
     }
   });

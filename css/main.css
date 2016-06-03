@@ -495,7 +495,7 @@ a {
     .nav__logo--second {
       fill: white; }
   .nav__links--text {
-    color: white;
+    color: #19132B;
     text-decoration: none;
     transition: all 1s ease-in-out;
     padding-right: 2em; }
@@ -525,7 +525,7 @@ a {
   margin: 0;
   padding: 0;
   width: 100vw;
-  background: linear-gradient(rgba(25, 19, 43, 0), rgba(25, 19, 43, 0.6)), url(/img/bg-two.jpeg);
+  background: linear-gradient(rgba(25, 19, 43, 0.1), rgba(25, 19, 43, 0.7)), url(../img/bg-two.jpeg);
   background-size: cover;
   background-position: center; }
   .hero h2 {
@@ -580,7 +580,7 @@ a {
   margin: 0;
   padding: 0;
   width: 100vw;
-  background: linear-gradient(rgba(25, 19, 43, 0.6), rgba(25, 19, 43, 0.6)), url(/img/services-bg.jpg);
+  background: linear-gradient(rgba(25, 19, 43, 0.6), rgba(25, 19, 43, 0.6)), url(../img/services-bg.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
@@ -648,7 +648,7 @@ a {
 .footer {
   width: 100vw;
   padding: 8em 0 0 0;
-  background: linear-gradient(135deg, rgba(91, 206, 187, 0.9), rgba(25, 19, 43, 0.9)), url(/img/footer-bg.jpg);
+  background: linear-gradient(135deg, rgba(91, 206, 187, 0.9), rgba(25, 19, 43, 0.9)), url(../img/footer-bg.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
